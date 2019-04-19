@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Average needed float calculation for trade-up contracts.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for neededFloat {rCSGOfloat}"><tr><td>neededFloat {rCSGOfloat}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Average needed float calculation for trade-up contracts.
+</h2>
+
+<h3>Description</h3>
+
+<p>Calculate the average float of input skins needed to get the output skin in the desired condition.
+A helpful resource for finding the float boundaries is https://csgostash.com/
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+neededFloat(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>desiredCondition</code></td>
+<td>
+
+<p>Character vector containing the desired condition of the output skin from the trade-up contract.
+</p>
+<p>Format:
+</p>
+<p>&quot;FN&quot; | &quot;Factory New&quot;
+</p>
+<p>&quot;MW&quot; | &quot;Minimal Wear&quot;
+</p>
+<p>&quot;FT&quot; | &quot;Field-Tested&quot;
+</p>
+<p>&quot;WW&quot; |  &quot;Well-Worn&quot;
+</p>
+<p>&quot;BS&quot; | &quot;Battle-Scarred&quot;
+</p>
+</td></tr>
+<tr valign="top"><td><code>min</code></td>
+<td>
+
+<p>The upper boundary of the float value of the skin you want to trade up to.
+</p>
+</td></tr>
+<tr valign="top"><td><code>max</code></td>
+<td>
+
+<p>The lower boundary of the float value of the skin you want to trade up to.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+neededFloat(desiredCondition = "MW",min = 0,max = 0.75)
+ &gt; Average Condition Needed:  0.192307692307692
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>rCSGOfloat</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

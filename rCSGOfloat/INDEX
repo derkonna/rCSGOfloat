@@ -1,0 +1,4 @@
+floatCalc               Output float and condition calculation for
+                        trade-up contracts
+neededFloat             Average needed float calculation for trade-up
+                        contracts.
